@@ -23,13 +23,19 @@ img {
     display: block;
 }
 
-#right, #left {
+.arrow {
     width: 70px;
 	height: 70px;
 	background: rgba(0,0,0, 0.7);
 	border-radius: 50%;
     position: absolute;
     cursor: pointer;
+    display: none;
+    transition: 300ms;
+}
+
+.container:hover .arrow {
+    display: block;
 }
 
 #right {
